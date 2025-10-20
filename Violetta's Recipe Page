@@ -85,15 +85,10 @@
                    
                 </div>
                   <div class="similar_recipe">
-                    <h3>Similar recipe can be found...</h3>
-                     <p><a href="https://veronikaskitchen.com/borscht-soup-recipe/#recipe"
-                  </div>
-
-                   </div>
-
-            </div>
-
-            <br>
+                    <h2>Additional Borsht Recipes...</h2>
+                     <li><a href="https://veronikaskitchen.com/borscht-soup-recipe/#recipe"
+                    </a></li>
+                   
             <footer>
                 <p> Author:Gypsyplate
 
