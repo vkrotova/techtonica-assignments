@@ -1,8 +1,20 @@
 body {
-    background-color: #d7c7e1;
+    background-color: #d5addc;
+    font-family: "Vend Sans", sans-serif;
 }
 
 h1 {
-    color: navy;
-    font-family: Arial, sans-serif;
+    color: rgb(73, 6, 114);
+    font-family: "Vend Sans", sans-serif;
 }
+
+h2 {
+    color: rgb(102, 28, 166);
+    font-family: "Vend Sans", sans-serif;
+}
+
+h3 {
+    color: rgb(106, 48, 158);
+    font-family: "Vend Sans", sans-serif;
+}
+
