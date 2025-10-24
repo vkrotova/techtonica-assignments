@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>My Recipe</title>
+    <meta charset=“utf-8”>
+</head>
+
+<body>
+    <div class="recipe_header">
+
+    </div>
+    <h1> How to make Ukrainian Borsht</h1>
+<p> Borscht is a sour soup originating from Eastern Europe most famously known as a bright red beetroot soup. It is served hot and is made with a variety of vegetables like cabbage, carrots, and potatoes, often using a meat or vegetable stock</p>
+
+ </div>
+       <div class="middle">
+
+            <div id="prep_time">
+                <h4>PREP TIME:</p>
+                <p>15 mins</p>
+            </div>
+
+             <div id="total_time">
+                <h4>TOTAL TIME:</p>
+                <p>3 hours 45 minutes</p>
+            </div>
+
+            <div id="Serving">
+                <h4>SERVINGS:</p>
+                <p>10</p>
+            </div>
+
+        </div>
+
+         <div class="ingredient">
+             <div id="ingredient">
+                <h3>INGREDIENTS</h3>
+                <h5>Borsht Broth</h5>
+                <ul>
+
+                <li>1.5 pounds beef short ribs</li>
+                <li>¼ large onion, cut into quarters</li>
+                <li>1 carrot, cut into big chunks/li>
+                <li>2 bay leaves</li>
+                <li>6-7 black peppercorns</li>
+                <li>1 Tbsp salt</li>
+                <li>12 cups water</li>
+
+                </ul>
+                <h5>Borsht</h5>
+                <ul>
+                    
+                <li>2 Tbsp oil, divided</li>
+                <li>1 medium onion, diced small</li>
+                <li>2 cloves garlic chopped + 3-4 cloves garlic sliced</li>
+                <li>2 carrots, peeled and grated</li>
+                <li>2 large beets, peeled and grated</li>
+                <li>1 tsp sugar</li>
+                <li>4 Tbsp tomato paste</li>
+                <li>3 medium Yukon potatoes, peeled and cut into small chunks</li>
+                <li>5 cups shredded cabbage</li>
+                <li>2 Tbsp fresh dill, chopped</li>
+                <li>sour cream, to serve</li>
+
+                </div>
+                <div id="recipe_img"></div>
+                    <img scr="https://tastythriftytimely.com/wp-content/uploads/2021/06/Borscht-8.jpg" >
+                </div>
+                
+                </div>          
+                <div class="instructions_area">
+                      <h3>INSTRUCTIONS</h3>
+                      <ol>
+                     <li>In a large soup pot or dutch oven, combine short ribs, onion, carrot chunks, celery, bay leaves, peppercorns, salt and water.</li>
+                     <li>Bring it to a boil and then lower the heat, cover and simmer for 2.5 to 3 hours, or until the meat is falling off the bones. Remove the scum that floats to the top with a spoon several times in the beginning.</li>
+                     <li>While the broth is simmering, heat 1 Tbsp oil in a pan and sauté diced onion for 2-3 minutes. Add chopped garlic and grated carrot and sauté till the carrot starts to soften up, about 6-8 minutes. Plate it out.</li>
+                     <li>In the same pan, add 1 Tbsp more oil and sauté grated beets for 4-5 minutes. Add sugar, ½ Tbsp white vinegar, and tomato paste and cook for 12-15 minutes, until the beats are tender. You will add this this to the soup pot later.</li>
+                     <li>Once the Borscht stock is done, remove the short ribs. Shred the meat into big chunks.</li>
+                     <li>Bring the beef broth to a boil again and add back in beef along with potatoes. Let it simmer on medium low heat for 15 minutes.</li>
+                     <li>Add the sautéed onion and carrot mixture along with shredded cabbage, salt and pepper. Cook for 10 minutes.</li>
+                     <li>Add grated beet mixture and let it simmer again for 7-8 minutes.</li>
+                     <li>Stir in chopped dill and sliced garlic, and let it simmer for 2 minutes. Taste and adjust for salt.</li>
+                    <li>Let it sit at least for 30 minutes to meld all the flavors. Serve with fresh dill, a few garlic slices and a dollop of sour cream.</li>
+                    </ol>
+                   
+                </div>
+                  <div class="similar_recipe">
+                    <h2>Additional Borsht Recipes...</h2>
+                     <li><a href="https://veronikaskitchen.com/borscht-soup-recipe/#recipe"
+                    </a></li>
+                   
+            <footer>
+                <p> Author:Gypsyplate
+
+
+    
+</body>
+</html>
