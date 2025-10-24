@@ -25,5 +25,12 @@ p {
 
 .left {
     width: 600px;
-    float: left;    
+    float: left;
+    margin-top: 25px;    
+}
+
+.right{
+    width: 600px;
+    float: left;
+    margin-left: 30px;
 }
