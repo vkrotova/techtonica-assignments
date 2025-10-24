@@ -1,0 +1,36 @@
+body {
+    background-color: #d5addc;
+    font-family: "Vend Sans", sans-serif;
+}
+
+h1 {
+    color: rgb(73, 6, 114);
+    font-family: "Vend Sans", sans-serif;
+    font-size: 70px;
+}
+
+h2 {
+    color: rgb(102, 28, 166);
+    font-family: "Vend Sans", sans-serif;
+}
+
+h3 {
+    color: rgb(106, 48, 158);
+    font-family: "Vend Sans", sans-serif;
+}
+
+p {
+    width: 600px;
+}
+
+.left {
+    width: 600px;
+    float: left;
+    margin-top: 25px;    
+}
+
+.right{
+    width: 600px;
+    float: left;
+    margin-left: 30px;
+}
