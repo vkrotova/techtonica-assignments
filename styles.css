@@ -22,3 +22,8 @@ h3 {
 p {
     width: 600px;
 }
+
+.left {
+    width: 600px;
+    float: left;    
+}
