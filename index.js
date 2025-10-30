@@ -10,5 +10,11 @@ function addElement(name, listname) {
  
  label.appendChild(document.createTextNode(name));
 
+  newListItem.appendChild(checkbox);
+    newListItem.appendChild(label);
+
+    listname.appendChild(newListItem);
+
+
 }
 
