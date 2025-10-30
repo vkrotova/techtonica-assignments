@@ -18,3 +18,5 @@ function addElement(name, listname) {
 
 }
 
+const ul_brothList = document.getElementById('brothList');
+
