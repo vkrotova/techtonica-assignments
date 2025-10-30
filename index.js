@@ -5,7 +5,9 @@ function addElement(name, listname) {
       let checkbox = document.createElement("input");
 
  var label = document.createElement("label");
-
+  
+ label.htmlFor = "id";
+ 
 
 }
 
