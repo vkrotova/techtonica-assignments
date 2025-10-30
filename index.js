@@ -2,6 +2,7 @@
 function addElement(name, listname) {
 
      let newListItem = document.createElement('li');
+      let checkbox = document.createElement("input");
 
 
 
