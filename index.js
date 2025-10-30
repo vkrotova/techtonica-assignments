@@ -8,6 +8,7 @@ function addElement(name, listname) {
   
  label.htmlFor = "id";
  
+ label.appendChild(document.createTextNode(name));
 
 }
 
