@@ -43,3 +43,4 @@ addElement("3 medium Yukon potatoes, peeled and cut into small chunks", ul_borsc
 addElement("5 cups shredded cabbage", ul_borschtList)
 addElement("2 Tbsp fresh dill, chopped", ul_borschtList)
 addElement("sour cream, to serve", ul_borschtList)
+

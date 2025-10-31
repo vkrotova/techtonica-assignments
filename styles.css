@@ -1,10 +1,10 @@
 body {
-    background-color: #d5addc;
+    background-color: #f4eff5;
     font-family: "Vend Sans", sans-serif;
 }
 
 h1 {
-    color: rgb(73, 6, 114);
+    color: rgb(120, 50, 163);
     font-family: "Vend Sans", sans-serif;
     font-size: 70px;
 }
@@ -35,3 +35,13 @@ p {
     float: left;
     margin-left: 30px;
 }
+.checked {
+    text-decoration: line-through;
+}
+
+<title>Checkbox Strikethrough</Borschtbroth>
+<style>
+  /* Apply strikethrough to the label when the sibling checkbox is checked */
+  input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+  }
