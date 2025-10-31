@@ -3,6 +3,7 @@ function addElement(name, listname) {
 
     let newListItem = document.createElement('li');
     let checkbox = document.createElement("input");
+    checkbox.type="checkbox"
 
     var label = document.createElement("label");
 
