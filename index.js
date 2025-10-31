@@ -35,3 +35,4 @@ const ul_borschtList = document.getElementById('borschtList');
 addElement("2 Tbsp oil, divided", ul_borschtList)
 addElement("1 medium onion, diced small", ul_borschtList)
 addElement("2 cloves garlic chopped + 3-4 cloves garlic sliced", ul_borschtList)
+addElement("2 carrots, peeled and grated", ul_borschtList)
