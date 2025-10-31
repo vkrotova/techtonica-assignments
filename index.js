@@ -33,4 +33,5 @@ addElement("1 carrot, cut into big chunks", ul_brothList)
 
 const ul_borschtList = document.getElementById('borschtList');
 addElement("2 Tbsp oil, divided", ul_borschtList)
+addElement("1 medium onion, diced small", ul_borschtList)
 
