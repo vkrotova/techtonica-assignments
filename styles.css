@@ -45,3 +45,9 @@ p {
   input[type="checkbox"]:checked + label {
     text-decoration: line-through;
   }
+
+  .box{
+    width: 40%border: 10px 
+    float: left;
+    font-size 4em;
+
