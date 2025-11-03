@@ -51,3 +51,15 @@ p {
     float: left;
     font-size 4em;
 
+      }
+
+  @media (max-width: 768px) {
+    body {
+        background-color: cornsilk;
+        font-size 1.5em;
+    }
+    #box1 {
+        passinf: 20px:
+    }
+  }
+
