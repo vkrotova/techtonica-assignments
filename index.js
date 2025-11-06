@@ -4,12 +4,21 @@ function addElement(name, listname) {
     let newListItem = document.createElement('li');
     let checkbox = document.createElement("input");
     checkbox.type="checkbox";
+    checkbox.id= 'chk';
 
     var label = document.createElement("label");
-
-    label.htmlFor = "id";
+    label.htmlFor = checkbox.id;
 
     label.appendChild(document.createTextNode(name));
+
+    checkbox.addEventListener('change', () =>{
+        if (checkbox.checked){
+            label.classList.add('strikethrough');
+        } else {
+            label.classList.remove('strikethrough');
+        }
+
+    });
 
     newListItem.appendChild(checkbox);
     newListItem.appendChild(label);
