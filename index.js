@@ -1,9 +1,9 @@
-// Function to create checkboxes with labels in a list
+
 function addElement(name, listname) {
 
     let newListItem = document.createElement('li');
     let checkbox = document.createElement("input");
-    checkbox.type="checkbox"
+    checkbox.type="checkbox";
 
     var label = document.createElement("label");
 
@@ -44,3 +44,14 @@ addElement("5 cups shredded cabbage", ul_borschtList)
 addElement("2 Tbsp fresh dill, chopped", ul_borschtList)
 addElement("sour cream, to serve", ul_borschtList)
 
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+ checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+          
+            if (this.checked) {
+                console.log("Checkbox with ID " + this.id + " is checked.");
+            } else {
+                console.log("Checkbox with ID " + this.id + " is unchecked.");
+            }
+        });
+    });

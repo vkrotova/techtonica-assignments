@@ -26,37 +26,38 @@ p {
 .left {
     width: 600px;
     float: left;
-    margin-top: 25px;    
+    margin-top: 25px;
     margin-left: 20px;
 }
 
-.right{
+.right {
     width: 600px;
     float: left;
     margin-left: 30px;
 }
+
 .checked {
     text-decoration: line-through;
 }
 
-    .strikethrough {
+.strikethrough {
     text-decoration: line-through;
-    }
+}
 
-  .box{
-    width: 40%border: 10px 
+.box {
+    width: 40% border: 10px;
     float: left;
     font-size 4em;
 
-      }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     body {
         background-color: cornsilk;
         font-size 1.5em;
     }
-    #box1 {
-        padding: 20px:
-    }
-  }
 
+    #box1 {
+        padding: 20px;
+    }
+}
