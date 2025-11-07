@@ -152,12 +152,7 @@ p {
         top: 0;
     }
 
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
+
 
 /* Style the form element with a border around it */
 form {
