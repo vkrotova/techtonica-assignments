@@ -1,6 +1,4 @@
-function myFunction(x) {
-    x.classList.toggle("change");
-}
+
 
 
 function addElement(name, listname) {
@@ -57,15 +55,4 @@ addElement("5 cups shredded cabbage", ul_borschtList)
 addElement("2 Tbsp fresh dill, chopped", ul_borschtList)
 addElement("sour cream, to serve", ul_borschtList)
 
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-checkboxes.forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-
-        if (this.checked) {
-            console.log("Checkbox with ID " + this.id + " is checked.");
-        } else {
-            console.log("Checkbox with ID " + this.id + " is unchecked.");
-        }
-    });
-});
 
