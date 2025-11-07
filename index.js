@@ -1,5 +1,5 @@
 function myFunction(x) {
-  x.classList.toggle("change");
+    x.classList.toggle("change");
 }
 
 
@@ -7,16 +7,16 @@ function addElement(name, listname) {
 
     let newListItem = document.createElement('li');
     let checkbox = document.createElement("input");
-    checkbox.type="checkbox";
-    checkbox.id= 'chk';
+    checkbox.type = "checkbox";
+    checkbox.id = 'chk';
 
     var label = document.createElement("label");
     label.htmlFor = checkbox.id;
 
     label.appendChild(document.createTextNode(name));
 
-    checkbox.addEventListener('change', () =>{
-        if (checkbox.checked){
+    checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
             label.classList.add('strikethrough');
         } else {
             label.classList.remove('strikethrough');
@@ -58,15 +58,14 @@ addElement("2 Tbsp fresh dill, chopped", ul_borschtList)
 addElement("sour cream, to serve", ul_borschtList)
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
- checkboxes.forEach(function(checkbox) {
-        checkbox.addEventListener('change', function() {
-          
-            if (this.checked) {
-                console.log("Checkbox with ID " + this.id + " is checked.");
-            } else {
-                console.log("Checkbox with ID " + this.id + " is unchecked.");
-            }
-        });
-    });
+checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
 
-   
+        if (this.checked) {
+            console.log("Checkbox with ID " + this.id + " is checked.");
+        } else {
+            console.log("Checkbox with ID " + this.id + " is unchecked.");
+        }
+    });
+});
+
