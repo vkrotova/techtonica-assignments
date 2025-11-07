@@ -1,4 +1,6 @@
-
+function myFunction(x) {
+  x.classList.toggle("change");
+}
 
 
 function addElement(name, listname) {
