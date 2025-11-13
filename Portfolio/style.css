@@ -5,3 +5,6 @@ body {
 h1 {
   background-color: rgb(203, 182, 182);
 }
+h1 {
+  text-align: center;
+}
