@@ -20,7 +20,8 @@ body {
   padding: 0;
 }
 
-h2, p {
+h2,
+p {
   margin: 10px;
 }
 
@@ -47,3 +48,26 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
