@@ -1,7 +1,10 @@
 body {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(216, 168, 168);
 }
 
 h1 {
   background-color: rgb(203, 182, 182);
 }
+    .centered-header {
+      text-align: center;
+    }
