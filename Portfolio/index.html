@@ -13,7 +13,7 @@
         <div class="container nav">
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#Socials">Socials</a></li>
+                <li><a href="#Github">Github</a></li>
                 <li><a href="#Contact">Contact</a></li>
                 <li><a href="#About Me">About Me</a></li>
 
@@ -32,6 +32,20 @@
             <img src="./images/0.jpg" width="300px" />
 
         </div>
+
+        <h1>Contact Me To Collaborate</h1>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
     </main>
     <footer>
         <link rel="stylesheet"
