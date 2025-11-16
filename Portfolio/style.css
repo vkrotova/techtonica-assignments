@@ -32,6 +32,10 @@ header {
   border-bottom: 1px solid #e5e7eb;
 }
 
+img {
+  border: 5px solid #555;
+}
+
 /* NAVIGATION */
 .nav {
   display: flex;
