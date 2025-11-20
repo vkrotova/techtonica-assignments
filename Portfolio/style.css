@@ -11,6 +11,24 @@ p {
   font-size: 16px;
 }
 
+.grid p {
+    transition: transform 0.3s ease;
+}
+
+.grid p:hover {
+    transform: scale(1.05);
+  
+}
+
+.center {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.center:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
 @media screen and (max-width: 600px) {
   p {
     font-size: 12px
