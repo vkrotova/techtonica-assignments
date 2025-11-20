@@ -10,6 +10,16 @@ body {
 p {
   font-size: 16px;
 }
+
+.grid p {
+    transition: transform 0.3s ease;
+}
+
+.grid p:hover {
+    transform: scale(1.05);
+  
+}
+
 .center {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
