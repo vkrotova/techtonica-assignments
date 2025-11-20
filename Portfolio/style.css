@@ -14,7 +14,7 @@ p {
 .content p {
         font-size: 18px;
     }
-    
+
 @media screen and (max-width: 600px) {
   p {
     font-size: 12px
@@ -140,12 +140,23 @@ input[type=submit]:hover {
 }
 
 
+.fa-linkedin {
+  background: #050608;
+  color: white;
+}
+
+.fa-twitter {
+  background: #070809;
+  color: white;
+}
+
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
+  font-size: 20px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
+   border-radius: 20%;
 }
 
 .fa:hover {
