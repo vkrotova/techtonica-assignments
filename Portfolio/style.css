@@ -38,6 +38,9 @@ h1 {
 
 
 
+h2 {
+  padding: 45px;
+}
 
 
 
@@ -54,8 +57,9 @@ h1 {
 }
 
 img {
-  border: 5px solid #555;
+  border: 5px solid #544f4f;
 }
+
 
 /* NAVIGATION */
 .nav {
@@ -114,7 +118,9 @@ ul li a:hover {
   padding: 1rem;
 }
 
-
+.box {
+  box-shadow: 5px 10px;
+}
 
 
 
