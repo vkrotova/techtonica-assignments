@@ -178,3 +178,12 @@ input[type=submit]:hover {
   opacity: 0.7;
 }
 
+.fa-phone {
+  background: #070809;
+  color: white;
+}
+
+.fa-envelope{
+   background: #070809;
+  color: white;
+}
