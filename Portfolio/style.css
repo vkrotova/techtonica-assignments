@@ -1,0 +1,189 @@
+
+body {
+
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: "Courier New", monospace;
+  line-height: 1.5;
+
+}
+
+p {
+  font-size: 16px;
+}
+
+.content p {
+        font-size: 18px;
+    }
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 12px
+  }
+}
+
+header {
+  background-color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  width: min(100% - 2rem, 1120px);
+  margin-inline: auto;
+
+}
+
+
+.section {
+  padding-block: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333333;*/
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+
+/* CONTENT*/
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.grid{
+  display: grid;
+  gap: 1rem;
+}
+
+.grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+padding-bottom: 10px; }
+.grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.box {
+  border: 5px solid #0f1113;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.box {
+  box-shadow: 5px 10px;
+}
+
+
+
+.centered-header {
+  text-align: center;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #030903;
+}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.fa-linkedin {
+  background: #050608;
+  color: white;
+}
+
+.fa-twitter {
+  background: #070809;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 20%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-phone {
+  background: #070809;
+  color: white;
+}
+
+.fa-envelope{
+   background: #070809;
+  color: white;
+}

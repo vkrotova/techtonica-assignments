@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8SCSDT30Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q8SCSDT30Z');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+     <!--Open Graph Social Metadata
+     I defined the Open Graph tags.These are used by social platforms like LinkedIn, and Twitter to generate link previews.
+I specify the title, type, preview image, site name-->
+
+    <meta property="og:title" content="My Portfolio" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:image" content="./images/0.jpg" />
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:description" content="This is my tech portfolio" />
+    <meta property="og:site_name" content="My Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+
+   <!-- I also include Font Awesome by loading it through their kit script, which enables icons in the UI.
+After that, I linked my style.css stylesheet. -->
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--The <body> Section: Page Content & UI-->
+
+<body>
+    <header>
+
+        <!--The <header> contains my navigation bar.
+I wraped it in a .container class for the horizontal padding across the layout.
+Inside the nav, I use an unordered list to create the menu structure.
+Each <a> tag links either to an anchor section on the page or to external sites like my GitHub.
+
+This gives users quick access to the main sections of the page and improves overall UX.
+
+Intro Section: Identity, Avatar, and Contact Points
+
+In my introduction section, I use an <h1> to emphasize my name as the top-level heading.
+This is important both for accessibility and SEO because search engines use heading hierarchy to understand content structure.
+
+Profile Image
+
+I include a profile image using an <img> tag and give it a class for styling.
+The alt attribute provides a text description for screen readers, which is an important accessibility requirement.
+
+Contact Links
+
+For contact options, I include several hyperlinks with Font Awesome icons.
+One opens the user’s email client using a mailto: link, and another triggers the phone dialer on mobile devices using a tel: link.
+
+I also embed links to LinkedIn and Twitter, each represented by a corresponding icon.
+These provide quick access to my professional social presence.-->
+
+        <div class="container nav">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="https://github.com/vkrotova">Github</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+
+        <div class="section">
+            <h1 style="text-align: center;">Violetta Krotova </h1>
+            <div class="grid cols-2">
+
+
+
+
+
+                <img src="./images/0.jpg" alt="images" width="150px" class="center" />
+
+                <div class="container">
+                    <h2>Get In Touch</h2>
+                    <p><a href="mailto:violettakrotova23@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="tel:8180000000"><i class="fa fa-phone"></i></a></p>
+
+
+
+                
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <a href="https://www.linkedin.com/in/violettakrotova/" class="fa fa-linkedin"></a>
+                    <a href="https://x.com/VKrotova59299" class="fa fa-twitter"></a>
+                </div>
+
+
+ <!--About Me Section: Text Content
+
+Below the intro section, I include a descriptive paragraph inside a .container class.
+This text explains my background, specifically my transition from technical recruiting to software development.<-->
+
+            </div>
+            <div class="container">
+            After years of identifying talent and matching developers with companies, I’ve decided to flip the
+            script and become the developer myself.
+
+            It’s been a thrilling and challenging transition, but the
+            path from tech recruiter to coder is one I’m excited to be walking. I’ll be sharing my journey—what
+            I’ve learned, the resources I’ve found most helpful, and how my time in recruiting has shaped the
+            way I approach coding. Whether you're thinking of making a similar leap, already a developer, or
+            just curious about the behind-the-scenes of tech recruitment, I hope this space serves as a useful
+            and inspiring resource. Let’s build something great together!
+            </div>
+        </div>
+
+        <!--Projects Section
+
+The next major block is the Projects section, identified by the id="projects" attribute so navigation can link to it.
+
+I render three project items using a CSS grid with three columns.
+Each project is wrapped inside a .box class to give it consistent padding, borders, and spacing.
+
+Project Card Details
+
+a heading (<h3>)
+
+a summary of the tech stack
+
+and a description of what I built
+This structure is easy to scan and maintain.-->
+
+
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="grid cols-3">
+                <div class="box">
+
+                    <h3>Project 1: Recipe Page – Personal Project</h3>
+                    <p>Tech Stack: JavaScript, HTML, CSS
+
+                    <p>Built a simple recipe page with checkbox functionality using JavaScript Dom manipulation.
+
+                        Implemented DOM manipulation to update tasks dynamically without reloading the page.</p>
+                    </p>
+                </div>
+                <div class="box">
+
+                    <h3>Project 2: Portfolio Webpage – Personal Project</h3>
+                    <p>Tech Stack: JavaScript, HTML, CSS
+
+                    <p> Built a simple portfolio page using tools such as VSCode, HTML, CSS, Git and GitHub.
+                        Incorporated SEO and a11y.
+                    </p>
+                </div>
+                <div class="box">
+
+                    <h3>Project 3: Games App – Personal Project</h3>
+                    <p>Tech Stack: JavaScript, HTML, CSS
+
+                    <p>TBD</p>
+
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="section" id="contact">
+<!--Contact Form Section
+
+After the projects, I include a contact form.
+I use semantic form elements such as <label> and <input> to ensure good accessibility.
+
+Each label uses the for attribute to match the id of its corresponding input field, which allows screen readers to announce the purpose of each form element.
+
+The form includes fields for first name, last name, email, and a multi-line message area using <textarea>.
+The submit button completes the form.-->
+
+            <h2>Contact Me</h2>
+            <form>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email" placeholder="Your email address">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Say Hello" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+
+
+
+
+    </main>
+    <footer>
+
+
+
+</body>
+
+</html>
