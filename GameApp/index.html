@@ -12,13 +12,17 @@
 <body> 
 
     <div class="container">
-        <h1 style="color: rgb(210, 177, 11);">Guess the Correct Number</h1>
+        <h1 style="color: rgb(207, 214, 4);">Guess the Correct Number</h1>
         <B>See if you can guess what the random numer is. Hint: It will be a number between 1 and 10.</B>
+
+         <script src="app.js"></script>
+
+
         <p>Instructions</p>
 
 </p>
 
-<p><img src="detective.jpg"alt="picture of detective" width="640" height="480" /></p>
+<p><img src="detective.jpg"alt="picture of detective" width="200" height="200" /></p>
 
     </div>
 
@@ -37,6 +41,34 @@
 
 
     </div>
+
+     <script type="text/javascript">
+
+        let y = Math.floor(Math.random() * 10 + 1);
+
+       
+        let guess = 1;
+
+        document.getElementById("submitguess").onclick = function () {
+  
+            let x = document.getElementById("guessField").value;
+
+            if (x == y) {
+                alert("Yay, you guessed correctly"
+                    + guess + " GUESS ");
+            }
+
+        
+            else if (x > y) {
+                guess++;
+                alert("Not it, try a smaller number");
+            }
+            else {
+                guess++;
+                alert("Nope, try a larger number")
+            }
+        }
+    </script>
 </body>
 
 </html>
