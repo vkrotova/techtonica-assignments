@@ -3,27 +3,32 @@
 
 <head>
 
-        <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Guess the Number Game</title>
 
-    
+
 </head>
 
-<body> 
+<body>
 
     <div class="container">
         <h1 style="color: rgb(207, 214, 4);">Guess the Correct Number</h1>
         <B>See if you can guess what the random numer is. Hint: It will be a number between 1 and 10.</B>
 
-         <script src="app.js"></script>
+        <script src="app.js"></script>
 
 
-        <p>Instructions</p>
-        
+        <h2>Instructions</h2>
+        <p> Enter a number between 1 and 10.</p>
+        <p>Click "Guess.</p>
+        <p>The game will tell you if your guess is too high, too low, or correct.</p>
+        <p>Your guess history is displayed.</p>
+        <p>Click "Reset Game" to start over.</p>
 
-</p>
 
-<p><img src="detective.jpg"alt="picture of detective" width="200" height="200" /></p>
+        </p>
+
+        <p><img src="detective.jpg" alt="picture of detective" width="200" height="200" /></p>
 
     </div>
 
@@ -36,22 +41,22 @@
 
             <input type="submit" value="Submit guess" class="guessSubmit" id="submitguess">
 
-             
+
         </div>
 
 
 
     </div>
 
-     <script type="text/javascript">
+    <script type="text/javascript">
 
         let y = Math.floor(Math.random() * 10 + 1);
 
-       
+
         let guess = 1;
 
         document.getElementById("submitguess").onclick = function () {
-  
+
             let x = document.getElementById("guessField").value;
 
             if (x == y) {
@@ -59,7 +64,7 @@
                     + guess + " GUESS ");
             }
 
-        
+
             else if (x > y) {
                 guess++;
                 alert("Not it, try a smaller number");
