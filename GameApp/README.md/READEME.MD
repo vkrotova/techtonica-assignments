@@ -10,28 +10,28 @@ A simple number guessing game built with **HTML, CSS, and JavaScript**.
 5. Click "Reset Game" to start over.
 
 # Features
- Make a games using JS and HTML
- Have at least 50 commits
- Create descriptive variable names
- Store numbers and strings in variables
- Perform math operations on numbers
- Increment and decrement variables
- *Obtain a random number
- Find the length of a string
- Index into a string
- *Create arrays using the proper syntax
- *Create nested arrays
- Index into arrays
- Change data inside an array using index reassignment
- Change data inside an array using .push(), .pop(), .shift() and .unshift()
- Define a function using proper syntax
- Pass arguments into a function
- Understand the difference between global scope and local scope
- Differentiate between var/const/let
- new Date(...arguments),
- Date.setTime()
- Use DOM methods to connect HTML and JS to create a game
- Include a README with a demo, and instructions for how to run the code
+ 1. Make a games using JS and HTML
+ 2. Have at least 50 commits
+ 3. Create descriptive variable names
+ 4. Store numbers and strings in variables
+ 5. Perform math operations on numbers
+ 6. Increment and decrement variables
+ 7. Obtain a random number
+ 8. Find the length of a string
+ 9. Index into a string
+ 10. Create arrays using the proper syntax
+ 11. Create nested arrays
+ 12. Index into arrays
+ 13. Change data inside an array using index reassignment
+ 14. Change data inside an array using .push(), .pop(), .shift() and .unshift()
+ 15. Define a function using proper syntax
+ 16. Pass arguments into a function
+ 17. Understand the difference between global scope and local scope
+ 18. Differentiate between var/const/let
+ 19. new Date(...arguments),
+ 20. Date.setTime()
+ 21. Use DOM methods to connect HTML and JS to create a game
+ 22. Include a README with a demo, and instructions for how to run the code
  
 
 # Demo
