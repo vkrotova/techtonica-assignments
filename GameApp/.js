@@ -1,14 +1,17 @@
 function resetGame() {
-    secretNumber = Math.floor(Math.random() * 10) + 1;
-    attemptCount = 5;
 
-    guessHistory.unshift("reset start");
-    guessHistory.push("reset end");      
-    guessHistory.pop();                   
-    guessHistory.shift();                
+    // Reset secret number
+    secretNumber = Math.floor(Math.random() * 100) + 1;
 
-    nestedHistory = []; 
+    // Reset attempts
+    guessAttempts = 0;
+
+    // Demonstrate array manipulation:
+    guessHistory.unshift("reset-start");
+    guessHistory.push("reset-end");
+    guessHistory.pop();
+    guessHistory.shift();
+
+    // Clear nested history
+    detailedHistory = [];
 }
-
-const resetButton = document.getElementById('resetButton');
-resetButton.addEventListener('click', resetGame);
