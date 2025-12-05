@@ -40,5 +40,21 @@ document.getElementById("reset-button").addEventListener("click", function() {
 
 const timeDisplay = document.getElementById("timeDisplay");
 let now = new Date();
-    now.setTime(now.getTime());  // Date.setTime example
+    now.setTime(now.getTime());  
     timeDisplay.textContent = `Last guess time: ${now.toLocaleTimeString()}`;
+
+
+    function resetGame() {
+    let newSecret = Math.floor(Math.random() * 10) + 1;
+
+    secretNumber = newSecret;
+
+    attemptCount = 0;
+
+    allGuesses = [];
+
+    guessList.innerHTML = "";
+
+    resultMessage.textContent = "Game reset!";
+
+}
