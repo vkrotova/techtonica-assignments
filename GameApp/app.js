@@ -1,7 +1,4 @@
-
-
-let y = Math.floor(Math.random() * 10 + 1);
-
+let randomNum = Math.floor(Math.random() * 10 + 1);
 
 let guess = 1;
 
@@ -9,16 +6,16 @@ document.getElementById("submitguess").onclick = function () {
 
     console.log("works");
 
-    let x = document.getElementById("guessField").value;
+    let guessNum = document.getElementById("guessField").value;
 
 
-    if (x == y) {
+    if (guessNum == randomNum) {
         alert("Yay, you guessed correctly"
             + guess + " GUESS ");
     }
 
 
-    else if (x > y) {
+    else if (guessNum > randomNum) {
         guess++;
         alert("Not it, try a smaller number");
 
