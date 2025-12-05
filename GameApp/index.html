@@ -6,18 +6,13 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Guess the Number Game</title>
 
-
 </head>
 
 <body>
 
-
     <div class="container">
-        <h1 style="color: rgb(207, 214, 4);">Guess the Correct Number</h1>
+        <h1>Guess the Correct Number</h1>
         <B>See if you can guess what the random numer is. Hint: It will be a number between 1 and 10.</B>
-
-        <script src="app.js"></script>
-
 
         <h2>Instructions</h2>
         <p> Enter a number between 1 and 10.</p>
@@ -25,66 +20,32 @@
         <p>The game will tell you if your guess is too high, too low, or correct.</p>
         <p>Your guess history is displayed.</p>
         <p>Click "Reset Game" to start over.</p>
-
-
-        </p>
-
         <p><img src="detective.jpg" alt="picture of detective" width="200" height="200" /></p>
 
     </div>
 
     <div class="container">
         <div class="form">
-            <label for="guessField">
-            </label>
+            <label for="guessField"></label>
 
             <input type="text" id="guessField" class="guessField">
 
             <input type="submit" value="Submit guess" class="guessSubmit" id="submitguess">
 
-                <button id="reset-button">Reset Game</button>
-
-
-        </div>
-
-
-
-    <script type="text/javascript">
-
-        let y = Math.floor(Math.random() * 10 + 1);
-
-
-        let guess = 1;
-
-        document.getElementById("submitguess").onclick = function () {
-
-            let x = document.getElementById("guessField").value;
-
-            if (x == y) {
-                alert("Yay, you guessed correctly"
-                    + guess + " GUESS ");
-            }
-
-
-            else if (x > y) {
-                guess++;
-                alert("Not it, try a smaller number");
-            }
-            else {
-                guess++;
-                alert("Nope, try a larger number")
-            }
-        }
-
-
+            <button id="reset-button">Reset Game</button>
 
         
-    </script>
+        </div>
+
+           <p id="timeDisplay"></p>
+           
+        <script src="app.js"></script>
 </body>
 
 </html>
 
-<!--*Make 1 or more games using JS and HTML
+<!-- 
+Make 1 or more games using JS and HTML
  Have at least 50 commits
  Create descriptive variable names
  Store numbers and strings in variables
@@ -93,8 +54,8 @@
  *Obtain a random number
  Find the length of a string
  Index into a string
- *Create arrays using the proper syntax
- *Create nested arrays
+ Create arrays using the proper syntax
+ Create nested arrays
  Index into arrays
  Change data inside an array using index reassignment
  Change data inside an array using .push(), .pop(), .shift() and .unshift()
@@ -112,4 +73,4 @@
 
 Track how many wrong guesses the user has made so far and display that count
 Track what numbers the user has already guessed and display those
-Let the user choose the range of the secret number*/
+Let the user choose the range of the secret number*/ -->
