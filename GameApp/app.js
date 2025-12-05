@@ -2,7 +2,7 @@ let randomNum = Math.floor(Math.random() * 10 + 1);
 let guess = 1;
 let messageSuccess = "Yay, you guessed correctly";
 let messageSmaller = "Not it, try a smaller number than 0";
-let messageLarger = "Nope, try a larger number";
+let messageLarger = "Nope, try a larger number than 0";
 
 document.getElementById("submitguess").onclick = function () {
 
@@ -24,6 +24,7 @@ document.getElementById("submitguess").onclick = function () {
         guess++;
 
         //String
+        let indexOf0 = myString.indexOf("0");
         alert(messageLarger)
     }
 
