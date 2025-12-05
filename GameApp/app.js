@@ -9,7 +9,7 @@ document.getElementById("submitguess").onclick = function () {
     let guessNum = document.getElementById("guessField").value;
 
     if (guessNum == randomNum) {
-        alert(messageSuccess + guess + " GUESS ");
+        alert(messageSuccess + " " + guess + " GUESS ");
     } else if (guessNum > randomNum) {
         guess++;
         
@@ -24,7 +24,12 @@ document.getElementById("submitguess").onclick = function () {
         guess++;
 
         //String
-        let indexOf0 = myString.indexOf("0");
+        let indexOfZero = messageLarger.indexOf("0"); // Find the index of Zero or location
+        const charArray = messageLarger.split(''); // Convert string to array of characters
+        const removedZero = charArray.pop(); // Remove the last array element 0
+        charArray[indexOfZero] = guessNum; // Add the number to the end of the array in the same location as the zero
+        messageLarger = charArray.join(''); // Join the array back into a string
+
         alert(messageLarger)
     }
 
