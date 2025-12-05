@@ -1,28 +1,29 @@
 let randomNum = Math.floor(Math.random() * 10 + 1);
-
 let guess = 1;
+let messageSuccess = "Yay, you guessed correctly";
+let messageSmaller = "Not it, try a smaller number";
+let messageLarger = "Nope, try a larger number";
 
 document.getElementById("submitguess").onclick = function () {
 
-    console.log("works");
 
     let guessNum = document.getElementById("guessField").value;
 
 
     if (guessNum == randomNum) {
-        alert("Yay, you guessed correctly"
+        alert(messageSuccess
             + guess + " GUESS ");
     }
 
 
     else if (guessNum > randomNum) {
         guess++;
-        alert("Not it, try a smaller number");
+        alert(messageSmaller);
 
     }
     else {
         guess++;
-        alert("Nope, try a larger number")
+        alert(messageLarger)
 
     }
 
