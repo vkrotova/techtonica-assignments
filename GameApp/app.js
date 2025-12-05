@@ -42,8 +42,10 @@ document.getElementById("reset-button").addEventListener("click", function () {
 
 const timeDisplay = document.getElementById("timeDisplay");
 let now = new Date();
-now.setTime(now.getTime());
-timeDisplay.textContent = `Last guess time: ${now.toLocaleTimeString()}`;
+let oneHourInMillis = 60000; // Adding time to clock
+now.setTime(now.getTime() + oneHourInMillis);
+
+timeDisplay.textContent = `Last guess time: ${now}`;
 
 
 function resetGame() {
