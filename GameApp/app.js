@@ -1,12 +1,12 @@
-let randomNum = Math.floor(Math.random() * 10 + 1);
+let randomNum = Math.floor(Math.random() * 10 + 1); //Generated a random number//
 let guess = 1;
-let messageSuccess = "Yay, you guessed correctly";
+let messageSuccess = "Yay, you guessed correctly"; //Stored the success message//
 let messageSmaller = "Not it, try a smaller number than 0";
 let messageLarger = "Nope, try a larger number than 0";
 
 document.getElementById("submitguess").onclick = function () {
 
-    let guessNum = document.getElementById("guessField").value;
+    let guessNum = document.getElementById("guessField").value; //a function to run when that button is clicked.//
 
     if (guessNum == randomNum) {
         alert(messageSuccess + " " + guess + " GUESS ");
@@ -17,9 +17,9 @@ document.getElementById("submitguess").onclick = function () {
         stringSize = messageSmaller.length -1; // Length of the string
         const charArray = messageSmaller.split(''); // Convert string to array of characters
         charArray[stringSize] = guessNum; // Modify the character 0 to the guessed number
-        messageSmaller = charArray.join(''); // Join the array back into a string
+        message = charArray.join(''); // Join the array back into a string
 
-        alert(messageSmaller);
+        alert(message);
     } else {
         guess++;
 
@@ -28,9 +28,9 @@ document.getElementById("submitguess").onclick = function () {
         const charArray = messageLarger.split(''); // Convert string to array of characters
         const removedZero = charArray.pop(); // Remove the last array element 0
         charArray[indexOfZero] = guessNum; // Add the number to the end of the array in the same location as the zero
-        messageLarger = charArray.join(''); // Join the array back into a string
+        message = charArray.join(''); // Join the array back into a string
 
-        alert(messageLarger)
+        alert(message)
     }
 
 }
@@ -47,7 +47,7 @@ now.setTime(now.getTime() + oneHourInMillis);
 
 timeDisplay.textContent = `Last guess time: ${now}`;
 
-
+//Added a reset game function//
 function resetGame() {
     let newSecret = Math.floor(Math.random() * 10) + 1;
 
