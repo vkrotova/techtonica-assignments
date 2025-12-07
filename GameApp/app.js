@@ -14,6 +14,19 @@ document.getElementById("submitguess").onclick = function () {
         guess++;
 
         // Array
+        const messages = {
+            hints: [
+                ["Nope, try a larger number than 0"]
+            ],
+            success: [
+                ["Correct!", "You guessed it"]
+            ],
+            errors: [
+                ["Invalid input", "Please enter a number between 1 and 10"]
+            ]
+        };
+
+
         stringSize = messageSmaller.length - 1; // Length of the string
         const charArray = messageSmaller.split(''); // Convert string to array of characters
         charArray[stringSize] = guessNum; // Modify the character 0 to the guessed number
