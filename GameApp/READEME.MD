@@ -35,4 +35,29 @@ A simple number guessing game built with **HTML, CSS, and JavaScript**.
  
 
 # Demo
-Open `index.html` in your browser to play.
+▶️ How to Run the Game
+
+Option 1: Run locally on your computer
+
+Create a new folder.
+
+Inside the folder, create a file named index.html.
+
+Paste the demo code above into the file.
+
+Open the file by double-clicking it (it will open in your browser).
+
+Play the game!
+
+
+Option 2: Run using VS Code Live Server
+
+Install VS Code
+
+Install the extension Live Server
+
+Right-click your index.html → Open with Live Server
+
+The game launches automatically in your browser.
+
+
