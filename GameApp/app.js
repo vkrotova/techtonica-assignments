@@ -5,16 +5,16 @@ let messageSmaller = "Not it, try a smaller number than 0";
 let messageLarger = "Nope, try a larger number than 0";
 
 document.getElementById("submitguess").onclick = function () {
-
+    console.log(randomNum)
     let guessNum = document.getElementById("guessField").value; //a function to run when that button is clicked.//
 
     if (guessNum == randomNum) {
         alert(messageSuccess + " " + guess + " GUESS ");
     } else if (guessNum > randomNum) {
         guess++;
-        
+
         // Array
-        stringSize = messageSmaller.length -1; // Length of the string
+        stringSize = messageSmaller.length - 1; // Length of the string
         const charArray = messageSmaller.split(''); // Convert string to array of characters
         charArray[stringSize] = guessNum; // Modify the character 0 to the guessed number
         message = charArray.join(''); // Join the array back into a string
@@ -36,10 +36,6 @@ document.getElementById("submitguess").onclick = function () {
 }
 
 
-document.getElementById("reset-button").addEventListener("click", function () {
-    document.getElementById("reset-button").reset();
-});
-
 const timeDisplay = document.getElementById("timeDisplay");
 let now = new Date();
 let oneHourInMillis = 60000; // Adding time to clock
@@ -48,17 +44,12 @@ now.setTime(now.getTime() + oneHourInMillis);
 timeDisplay.textContent = `Last guess time: ${now}`;
 
 //Added a reset game function//
-function resetGame() {
-    let newSecret = Math.floor(Math.random() * 10) + 1;
+document.getElementById("reset-button").onclick = function () {
+    console.log("Reset")
+    randomNum = Math.floor(Math.random() * 10) + 1;
+    guess = 0;
 
-    secretNumber = newSecret;
 
-    attemptCount = 0;
 
-    allGuesses = [];
-
-    guessList.innerHTML = "";
-
-    resultMessage.textContent = "Game reset!";
 
 }
