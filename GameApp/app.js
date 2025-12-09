@@ -1,5 +1,4 @@
- const gameContainer = document.getElementById('game-container');
-gameContainer.style.padding = '40px'; 
+
 
 let randomNum = Math.floor(Math.random() * 10 + 1); //Generated a random number//
 let guess = 1;

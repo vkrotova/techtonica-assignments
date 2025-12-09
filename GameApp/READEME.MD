@@ -37,7 +37,9 @@ A simple number guessing game built with **HTML, CSS, and JavaScript**.
 # Demo
 How to Run the Game
 
-Option 1: Run locally on your computer
+Option 1: 
+
+Run locally on your computer
 
 Create a new folder.
 
