@@ -11,3 +11,10 @@
         border: 2px solid black;
     }
 
+.my-button:hover {
+  background-color: #1d221d; 
+}
+
+p.thick {
+  font-weight: bold;
+}
