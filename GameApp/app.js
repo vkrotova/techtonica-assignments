@@ -31,14 +31,15 @@ document.getElementById("submitguess").onclick = function () {
         stringSize = messageSmaller.length - 1; // Length of the string
         const charArray = messageSmaller.split(''); // Convert string to array of characters
 
-        alert(message);
+        alert(messageSmaller);
+
     } else {
         guess++;
 
         let indexOfZero = messageLarger.indexOf("0"); // Find the index of Zero or location
         const charArray = messageLarger.split(''); // Convert string to array of characters
-    
-       
+
+
         const removedZero = charArray.pop(); // Remove the last array element 0
         chars.unshift(guessNum);
         chars.push("!");
@@ -63,8 +64,6 @@ document.getElementById("reset-button").onclick = function () {
     console.log("Reset")
     randomNum = Math.floor(Math.random() * 10) + 1;
     guess = 0;
-
-
 
 
 }
