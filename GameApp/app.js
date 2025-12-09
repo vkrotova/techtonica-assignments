@@ -38,6 +38,7 @@ document.getElementById("submitguess").onclick = function () {
     } else {
         guess++;
         let chars = messageLarger.split("");
+        let removedLast = chars.pop();
 
 
 
