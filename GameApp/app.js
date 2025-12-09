@@ -41,7 +41,8 @@ document.getElementById("submitguess").onclick = function () {
         let removedLast = chars.pop();
          chars.unshift(guessNum);  
          chars.push("!");
-         let newMessage = chars.join(""); 
+         let newMessage = chars.join("");
+         alert(newMessage); 
 
 
 
