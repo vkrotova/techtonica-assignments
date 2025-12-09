@@ -29,27 +29,21 @@ document.getElementById("submitguess").onclick = function () {
 
         stringSize = messageSmaller.length - 1; // Length of the string
         const charArray = messageSmaller.split(''); // Convert string to array of characters
-    
-    
+
+
         charArray[stringSize] = guessNum; // Modify the character 0 to the guessed number
         message = charArray.join(''); // Join the array back into a string
 
         alert(message);
     } else {
         guess++;
-        let chars = messageLarger.split("");
-        let removedLast = chars.pop();
-         chars.unshift(guessNum);  
-         chars.push("!");
-         let newMessage = chars.join("");
-         alert(newMessage); 
-
-
 
         //String
         let indexOfZero = messageLarger.indexOf("0"); // Find the index of Zero or location
         const charArray = messageLarger.split(''); // Convert string to array of characters
         const removedZero = charArray.pop(); // Remove the last array element 0
+        chars.unshift(guessNum);
+        chars.push("!");
         charArray[indexOfZero] = guessNum; // Add the number to the end of the array in the same location as the zero
         message = charArray.join(''); // Join the array back into a string
 
