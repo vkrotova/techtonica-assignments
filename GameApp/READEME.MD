@@ -53,6 +53,7 @@ Play the game!
 
 
 Option 2: 
+
 Run using VS Code Live Server
 
 Install VS Code
