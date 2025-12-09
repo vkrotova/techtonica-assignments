@@ -1,3 +1,5 @@
+ const gameContainer = document.getElementById('game-container');
+
 let randomNum = Math.floor(Math.random() * 10 + 1); //Generated a random number//
 let guess = 1;
 let messageSuccess = "Yay, you guessed correctly"; //Stored the success message//
