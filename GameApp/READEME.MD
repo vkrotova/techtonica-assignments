@@ -52,7 +52,8 @@ Open the file by double-clicking it (it will open in your browser).
 Play the game!
 
 
-Option 2: Run using VS Code Live Server
+Option 2: 
+Run using VS Code Live Server
 
 Install VS Code
 
