@@ -40,6 +40,7 @@ document.getElementById("submitguess").onclick = function () {
         let chars = messageLarger.split("");
         let removedLast = chars.pop();
          chars.unshift(guessNum);  
+         chars.push("!");  
 
 
 
