@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 
 
 let randomNum = Math.floor(Math.random() * 10 + 1); //Generated a random number//
