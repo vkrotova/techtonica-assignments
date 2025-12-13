@@ -8,6 +8,10 @@ const GameDisplay = () => {
                 <h1>???</h1>
                 <div className="line"></div>
 
+                
+<div className="title">
+    <h1>Guess My Num</h1>
+</div>
             
 
             </div>
