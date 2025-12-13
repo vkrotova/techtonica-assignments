@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import gamedisplay from "./components/GameDisplay"
 
 function App() {
   
@@ -15,7 +16,7 @@ const randomNumGenerator =() => {
 }
 
   return <div>
-       
+       <GameDisplay></GameDisplay>
 
 
       </div>;
