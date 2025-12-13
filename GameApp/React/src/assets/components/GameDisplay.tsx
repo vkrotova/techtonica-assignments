@@ -18,9 +18,16 @@ const GameDisplay = () => {
 <p>High Score: <span>10</span></p>
 <p>Start Guessing</p>
 
+<div className="Inputs">
+<input type="number"/>
+<div className="buttons"></div>
+<button>Guess</button>
+<button>Reset</button>
+
 
 
 </div>
+
             
 
             </div>
