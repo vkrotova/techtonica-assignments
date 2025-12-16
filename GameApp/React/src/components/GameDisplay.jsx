@@ -1,5 +1,4 @@
 import React from 'react'
-import gamedisplay from "./components/GameDisplay";
 const GameDisplay = () => (
 
     <div className='main'>
