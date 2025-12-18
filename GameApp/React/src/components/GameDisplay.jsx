@@ -20,6 +20,8 @@ function GameDisplay({ maxNumber }) {
             setMessage(`Hurray! The number was ${randomNumber}.`)
          } else if (num < randomNumber) {
             setMessage(`The number is too low, try again.`)
+         } else {
+            setMessage(`The number is too high, try again.`)
          }
 
     }
