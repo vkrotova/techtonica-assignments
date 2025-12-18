@@ -4,11 +4,28 @@ import './GameDisplay.css'
 function GameDisplay({ maxNumber }) {
     const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random()* maxNumber) + 1)
     const [guess, setGuess] = useState('')
-    const [message, setMessage] = useState(`Guess a number between 1 and ${maxNumber}`)
+    const [title, setTitle] = useState(`Guess a number between 1 and ${maxNumber}`)
+    const [message, setMessage] = useState('')
 
-    const handleGuess = () => {}
+    const handleGuess = () => {
+        const num = Number(guess)
+
+        // Empty
+        if (guess == '' || Number.isNaN(num)) [
+            setMessage('Please enter a valid number.')
+        ]
+
+        //Not Empty
+        if (num === randomNumber)[
+            
+        ]
+
+    }
     const handleReset = () => {}
 
+    const handleGuessChange = (event) => {
+        setGuess(event.target.value);
+    }
 
 
     return (
@@ -21,7 +38,7 @@ function GameDisplay({ maxNumber }) {
 
 
                 <div className="title">
-                    <h1>Guess My Number</h1>
+                    <h1>{ title }</h1>
                 </div>
 
                 <div className="middleSection">
@@ -30,10 +47,11 @@ function GameDisplay({ maxNumber }) {
                     <p>Start Guessing</p>
 
                     <div className="Inputs">
-                        <input type="number" />
+                        <input type="text" value={guess} onChange={handleGuessChange}/>
                         <div className="buttons"></div>
                         <button onClick={handleGuess}>Guess</button>
                         <button onClikc={handleReset}>Reset</button>
+                        <h2>{message}</h2>
                     </div>
                 </div>
             </div>
