@@ -17,8 +17,8 @@ function GameDisplay({ maxNumber }) {
 
         //Not Empty
         if (num === randomNumber)[
-            
-        ]
+            setMessage(`Hurray! The number was ${randomNumber}.`)
+        ] 
 
     }
     const handleReset = () => {}
