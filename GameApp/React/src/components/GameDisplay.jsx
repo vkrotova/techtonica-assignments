@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import './GameDisplay.css'
 
 function GameDisplay({ maxNumber }) {
-    const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random()*max) + 1)
+    const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random()* maxNumber) + 1)
     const [guess, setGuess] = useState('')
     const [message, setMessage] = useState(`Guess a number between 1 and ${maxNumber}`)
 
-    
+    const handleGuess = () => {}
+    const handleReset = () => {}
 
 
 
@@ -31,8 +32,8 @@ function GameDisplay({ maxNumber }) {
                     <div className="Inputs">
                         <input type="number" />
                         <div className="buttons"></div>
-                        <button>Guess</button>
-                        <button>Reset</button>
+                        <button onClick={handleGuess}>Guess</button>
+                        <button onClikc={handleReset}>Reset</button>
                     </div>
                 </div>
             </div>
