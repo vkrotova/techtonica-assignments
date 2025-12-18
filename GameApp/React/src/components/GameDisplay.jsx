@@ -7,7 +7,7 @@ function GameDisplay({ maxNumber }) {
     const [title, setTitle] = useState(`Guess a number between 1 and ${maxNumber}`)
     const [message, setMessage] = useState('')
 
-    const handleGuess = () => {
+    function handleGuess () {
         const num = Number(guess)
 
         // Empty
@@ -25,9 +25,13 @@ function GameDisplay({ maxNumber }) {
          }
 
     }
-    const handleReset = () => {}
+    function handleReset () {
+        setRandomNumber(Math.floor(Math.random()* maxNumber) + 1)
+        setMessage('')
+        setGuess('')
+    }
 
-    const handleGuessChange = (event) => {
+    function handleGuessChange (event) {
         setGuess(event.target.value);
     }
 
@@ -54,7 +58,7 @@ function GameDisplay({ maxNumber }) {
                         <input type="text" value={guess} onChange={handleGuessChange}/>
                         <div className="buttons"></div>
                         <button onClick={handleGuess}>Guess</button>
-                        <button onClikc={handleReset}>Reset</button>
+                        <button onClick={handleReset}>Reset</button>
                         <h2>{message}</h2>
                     </div>
                 </div>
