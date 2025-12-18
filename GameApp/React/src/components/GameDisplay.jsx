@@ -16,9 +16,11 @@ function GameDisplay({ maxNumber }) {
         ]
 
         //Not Empty
-        if (num === randomNumber)[
+        if (num === randomNumber){
             setMessage(`Hurray! The number was ${randomNumber}.`)
-        ] 
+         } else if (num < randomNumber) {
+            setMessage(`The number is too low, try again.`)
+         }
 
     }
     const handleReset = () => {}
