@@ -23,17 +23,9 @@ const GameDisplay = () => (
                     <div className="buttons"></div>
                     <button>Guess</button>
                     <button>Reset</button>
-
-
-
                 </div>
-
-
-
             </div>
-
-
         </div>
     </div>
-        )
-        export default GameDisplay
+)
+export default GameDisplay
