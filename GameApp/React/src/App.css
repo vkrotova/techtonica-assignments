@@ -33,6 +33,37 @@ body {
   width: 100%;
 }
 
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
+.middleSection p {
+  font-size: 3rem;
+  font-family: "Jersey 10", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.middleSection p:nth-child(3) {
+  margin-top: 20px;
+  font-size: 4rem;
+  font-family: "Jersey 10", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.middleSection button {
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 
 
 
