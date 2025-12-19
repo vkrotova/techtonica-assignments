@@ -10,8 +10,8 @@ body {
   color: white;
   background: linear-gradient(
     90deg,
-    rgb(159, 16, 203) 0%,
-    rgb(121, 86, 4) 100%
+    rgb(201, 66, 195) 0%,
+    rgb(72, 4, 121) 100%
   );
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ body {
 }
 .middleSection p:nth-child(3) {
   margin-top: 20px;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Jersey 10", sans-serif;
   transition: all 0.3s ease-in-out;
 }

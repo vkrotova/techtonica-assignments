@@ -6,14 +6,9 @@
     box-sizing: border-box;
 }
 
-.main {
-    background: linear-gradient(90deg,
-            rgba(#004238, #89c7a4, #87bbd9, #a44d8e, #fde7ec) 0%,
-            rgba(#004238, #91b3c7, #9c90c0, #c982b9, #b9c5a0) 100%);
-    height: 150vh
 
 
-}
+
 
 
 .jersey-10-regular {
