@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './GameDisplay.css'
+import './GameDisplay.css';
 
 function GameDisplay({ maxNumber }) {
     const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random()* maxNumber) + 1)
