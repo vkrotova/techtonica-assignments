@@ -38,11 +38,7 @@ function GameDisplay({ maxNumber }) {
     return (
         <div className='main'>
             <div className="container">
-                <div className="topSection"></div>
-                <div className="line"></div>
-            
-                <div className="line"></div>
-
+                <div className="topSection"><img src='./src/components/detective.jpg' /></div>
 
                 <div className="title">
                     <h1>{ title }</h1>

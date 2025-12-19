@@ -33,8 +33,12 @@ body {
   width: 100%;
 }
 
+.topSection img {
+  width: 200px;
+
+}
+
 .middleSection {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -47,12 +51,7 @@ body {
   font-family: "Jersey 10", sans-serif;
   transition: all 0.3s ease-in-out;
 }
-.middleSection p:nth-child(3) {
-  margin-top: 20px;
-  font-size: 2rem;
-  font-family: "Jersey 10", sans-serif;
-  transition: all 0.3s ease-in-out;
-}
+
 
 
 .middleSection button {
@@ -62,6 +61,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;
+  margin-right: 10px;
   color: black;
 }
 
@@ -70,4 +70,9 @@ body {
   background-color: white;
   color: black;
 
+}
+
+
+.middleSection button:hover {
+  filter: drop-shadow(0 0 14px #c81be3);
 }
