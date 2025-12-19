@@ -50,7 +50,6 @@ function GameDisplay({ maxNumber }) {
 
                 <div className="middleSection">
                     <p>Score: <span>10</span></p>
-                    <p>High Score: <span>10</span></p>
                     <p>Start Guessing</p>
 
                     <div className="Inputs">
