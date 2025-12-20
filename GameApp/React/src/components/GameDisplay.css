@@ -61,3 +61,10 @@ body {
   margin-right: 10px;
   color: black;
 }
+
+.middleSection input {
+  border: black;
+  background-color: white;
+  color: black;
+
+}
