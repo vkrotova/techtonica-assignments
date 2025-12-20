@@ -11,7 +11,7 @@ function GameDisplay({ maxNumber }) {
     const [title, setTitle] = useState(`Guess a number between 1 and ${maxNumber}`)
     const [message, setMessage] = useState('')
 
-//randomNumber
+
 
 //random number stores the number the player is trying to guess.
 
