@@ -39,7 +39,7 @@ function GameDisplay({ maxNumber }) {
         } else {
             setMessage(`The number is too high, try again.`)
         };
-
+//// Runs when the user clicks the "Reset" button
     }
     function handleReset() {
         setRandomNumber(Math.floor(Math.random() * maxNumber) + 1)
