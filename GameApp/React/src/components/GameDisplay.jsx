@@ -1,11 +1,27 @@
 import React, { useState } from 'react'
 import './GameDisplay.css';
 
+//Defined a React componenet called Game Display. 
+// max number is a prop passed into a cpomponent
+//max number used to set the upper limit for the random number guessing game. 
+
 function GameDisplay({ maxNumber }) {
     const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * maxNumber) + 1)
     const [guess, setGuess] = useState('')
     const [title, setTitle] = useState(`Guess a number between 1 and ${maxNumber}`)
     const [message, setMessage] = useState('')
+
+//randomNumber
+
+//random number stores the number the player is trying to guess.
+
+// Generates randomly between 1 and maxNumber.
+
+//guess stores the user’s input from the text box.
+
+//title displays the game title ,uses maxNumber to show the range.
+
+//message shows feedback like “too high”, “too low”, or “correct”.
 
     function handleGuess() {
         const num = Number(guess)
