@@ -43,3 +43,9 @@ body {
   justify-content: space-around;
   padding: 20px;
 }
+
+.middleSection p {
+  font-size: 3rem;
+  font-family: "Jersey 10", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
