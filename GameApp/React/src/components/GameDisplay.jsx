@@ -22,7 +22,7 @@ function GameDisplay({ maxNumber }) {
             setMessage(`The number is too low, try again.`)
          } else {
             setMessage(`The number is too high, try again.`)
-         }
+         };
 
     }
     function handleReset () {
