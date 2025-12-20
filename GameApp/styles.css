@@ -1,13 +1,9 @@
-    body {
+    .body {
         background-color: rgb(200, 206, 216);
+        margin: 0 auto;
     }
 
-    body {
-        font-family: Arial;
-        margin: 40px;
-    }
-
-    img {
+    .img {
         border: 2px solid black;
     }
 
