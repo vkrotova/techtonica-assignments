@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import './GameDisplay.css';
 
 function GameDisplay({ maxNumber }) {
-    const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random()* maxNumber) + 1)
+    const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * maxNumber) + 1)
     const [guess, setGuess] = useState('')
     const [title, setTitle] = useState(`Guess a number between 1 and ${maxNumber}`)
     const [message, setMessage] = useState('')
 
-    function handleGuess () {
+    function handleGuess() {
         const num = Number(guess)
 
         // Empty
@@ -16,22 +16,22 @@ function GameDisplay({ maxNumber }) {
         ]
 
         //Not Empty
-        if (num === randomNumber){
+        if (num === randomNumber) {
             setMessage(`Hurray! The number was ${randomNumber}.`)
-         } else if (num < randomNumber) {
+        } else if (num < randomNumber) {
             setMessage(`The number is too low, try again.`)
-         } else {
+        } else {
             setMessage(`The number is too high, try again.`)
-         };
+        };
 
     }
-    function handleReset () {
-        setRandomNumber(Math.floor(Math.random()* maxNumber) + 1)
+    function handleReset() {
+        setRandomNumber(Math.floor(Math.random() * maxNumber) + 1)
         setMessage('')
         setGuess('')
     }
 
-    function handleGuessChange (event) {
+    function handleGuessChange(event) {
         setGuess(event.target.value);
     }
 
@@ -41,7 +41,7 @@ function GameDisplay({ maxNumber }) {
                 <div className="topSection"><img src='./src/components/detective.jpg' /></div>
 
                 <div className="title">
-                    <h1>{ title }</h1>
+                    <h1>{title}</h1>
                 </div>
 
                 <div className="middleSection">
@@ -49,7 +49,8 @@ function GameDisplay({ maxNumber }) {
                     <p>Start Guessing</p>
 
                     <div className="Inputs">
-                        <input type="text" value={guess} onChange={handleGuessChange}/>
+                        <input type="text" value={guess} onChange={handleGuessChange} />
+
                         <div className="buttons"></div>
                         <button onClick={handleGuess}>Guess</button>
                         <button onClick={handleReset}>Reset</button>
