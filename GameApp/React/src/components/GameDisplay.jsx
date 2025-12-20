@@ -50,7 +50,7 @@ function GameDisplay({ maxNumber }) {
     function handleGuessChange(event) {
         setGuess(event.target.value);
     }
-
+//// JSX returned by the component 
     return (
         <div className='main'>
             <div className="container">
