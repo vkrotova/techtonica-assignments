@@ -43,35 +43,3 @@ body {
   justify-content: space-around;
   padding: 20px;
 }
-
-
-.middleSection p {
-  font-size: 3rem;
-  font-family: "Jersey 10", sans-serif;
-  transition: all 0.3s ease-in-out;
-}
-
-
-
-.middleSection button {
-  border: none;
-  outline: none;
-  font-size: 1.4rem;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-right: 10px;
-  color: black;
-}
-
-.middleSection input {
-  border: black;
-  background-color: white;
-  color: black;
-
-}
-
-
-.middleSection button:hover {
-  filter: drop-shadow(0 0 14px #000000);
-}
