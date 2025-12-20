@@ -46,7 +46,7 @@ function GameDisplay({ maxNumber }) {
         setMessage('')
         setGuess('')
     }
-
+//// Runs every time the user types in the input box
     function handleGuessChange(event) {
         setGuess(event.target.value);
     }
