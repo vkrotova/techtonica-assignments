@@ -1,0 +1,19 @@
+{
+  "name": "milestone-6-project",
+  "version": "1.0.0",
+  "description": "full stack web app using react and express",
+  "repository": {
+    "type": "git",
+    "url": "techtonica-assignments"
+  },
+  "license": "ISC",
+  "author": "violetta",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
