@@ -5,6 +5,8 @@ import bodyParser from 'body-parser';
 
 app.use(bodyParser.json());
 
+listen(PORT, () ==> console={.log(`Server running on port: http://localhost${PORT}`)});
+
 //Hardcoded data
 const books = [
   {
