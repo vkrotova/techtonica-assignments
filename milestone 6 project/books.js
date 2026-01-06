@@ -8,14 +8,20 @@ const books = [
     title: "Javacript For Kids",
     author: "Nick Morgan",
     genre: "Coding",
-    pages: 336
   },
   {
 id: 2,
 title: "Eloquent Javascript",
     author: "Marijn Haverbeke",
     genre: "Coding",
-    pages: 472
+  }
+
+  {
+id: 3, 
+title: "Effective Javascript",
+author: "David Herman",
+genre: "Coding",
+
   }
 
 ];
