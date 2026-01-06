@@ -1,3 +1,7 @@
+import express from 'express';
+const app = express();
+
+//Hardcoded data
 const books = [
   {
     id:1,
