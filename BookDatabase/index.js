@@ -6,3 +6,6 @@ app.use(bodyParser.json());
 
 app.get("/books", (req, res) => { ///api endpoint
     res.json(BOOKS);
+
+    });
+app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`)); //running our server
