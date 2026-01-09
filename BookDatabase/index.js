@@ -25,3 +25,12 @@ title: "Eloquent Javascript",
     author: "Marijn Haverbeke",
     genre: "Coding",
   }
+  {
+id: 3, 
+title: "Effective Javascript",
+author: "David Herman",
+genre: "Coding",
+
+  }
+
+];
