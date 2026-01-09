@@ -1,1 +1,3 @@
-import express from 'express'
+import express from 'express';
+
+connst router = express.REouter();
