@@ -4,6 +4,8 @@ const app = express();
 const PORT = 5001;
 app.use(bodyParser.json());
 
+importbookRoutes from './routes/books.js';
+
 app.get("/books", (req, res) => { ///api endpoint
     res.json(BOOKS);
 
