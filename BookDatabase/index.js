@@ -19,3 +19,9 @@ const books = [
     author: "Nick Morgan",
     genre: "Coding",
   },
+  {
+id: 2,
+title: "Eloquent Javascript",
+    author: "Marijn Haverbeke",
+    genre: "Coding",
+  }
