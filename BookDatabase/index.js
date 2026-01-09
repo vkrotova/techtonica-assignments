@@ -9,3 +9,7 @@ app.get("/books", (req, res) => { ///api endpoint
 
     });
 app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`)); //running our server
+
+
+//Hardcoded data
+const books = [
