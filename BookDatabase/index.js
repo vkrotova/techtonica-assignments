@@ -17,21 +17,21 @@ app.listen(PORT, () => console.log(`Server running on port: http://localhost:${P
 const books = [
      {
     id:1,
-    title: "Javacript For Kids",
-    author: "Nick Morgan",
-    genre: "Coding",
+    title: "MARS",
+    author: "Fuyumi Soryo",
+    genre: "Manga",
   },
   {
 id: 2,
-title: "Eloquent Javascript",
-    author: "Marijn Haverbeke",
-    genre: "Coding",
+title: "Demon Slayer: Kimetsu no Yaiba",
+    author: "Koyoharu Gotouge",
+    genre: "Manga",
   }
   {
 id: 3, 
-title: "Effective Javascript",
-author: "David Herman",
-genre: "Coding",
+title: "One Piece",
+author: "Eiichiro Oda",
+genre: "Manga",
 
   }
 
