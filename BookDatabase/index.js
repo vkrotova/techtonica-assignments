@@ -13,3 +13,9 @@ app.listen(PORT, () => console.log(`Server running on port: http://localhost:${P
 
 //Hardcoded data
 const books = [
+     {
+    id:1,
+    title: "Javacript For Kids",
+    author: "Nick Morgan",
+    genre: "Coding",
+  },
