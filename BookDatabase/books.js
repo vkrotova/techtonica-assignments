@@ -2,4 +2,8 @@ import express from 'express';
 
 connst router = express.REouter();
 
-router.get();
+router.get('/books' , (req, res) => {
+    res.send('Books');
+});
+
+export default router;
