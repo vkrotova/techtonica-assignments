@@ -67,10 +67,10 @@ const books = [
 
      id: 6,
         title: "Marmalade Boy",
-        author: "Fuyumi Soryo",
+        author: "Wataru Yoshizumi",
         genre: "Manga",
         description:
-        url: https:
+        url: https: "https://m.media-amazon.com/images/M/MV5BNWIxZjQxMDgtZjM4YS00ZTEyLTliNGItMDYyMzg1NWIwNzY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
 
 
 },
@@ -79,11 +79,11 @@ const books = [
 {
 
      id: 7,
-        title: "",
-        author: "",
-        genre: "",
+        title: "His and Her Circumstances",
+        author: "Masami Tsuda",
+        genre: "Manga",
         description:
-        url: https:
+        url: https: "https://m.media-amazon.com/images/I/519N1D3AWXL.jpg"
 
 
 },
@@ -91,11 +91,11 @@ const books = [
 {
 
      id: 8,
-        title: "",
-        author: "",
-        genre: "",
+        title: "From Me to You"
+        author: "Karuho Shiina",
+        genre: "Manga",
         description:
-        url: https:
+        url: https: "https://m.media-amazon.com/images/I/81Jp-JCMgbL._SL1500_.jpg"
 
 
 },
@@ -103,11 +103,11 @@ const books = [
 {
 
      id: 9,
-        title: "",
-        author: "",
+        title: "Good Morning Call",
+        author: "Yue Takasuka",
         genre: "",
         description:
-        url: https:
+        url: https: "https://d3tvwjfge35btc.cloudfront.net/Assets/10/049/L_p1001804910.jpg"
 
 
 },
@@ -126,12 +126,12 @@ const books = [
 
 {
 
-     id: 1,
-        title: "",
-        author: "",
-        genre: "",
+     id: 11,
+        title: "Astro Boy",
+        author: "Tetsuwan Atomu",
+        genre: "Manga",
         description:
-        url: https:
+        url: https: "https://upload.wikimedia.org/wikipedia/en/a/a6/Astro_Boy-08.jpg"
 
 
 },
@@ -139,30 +139,17 @@ const books = [
 {
 
      id: 12,
-        title: "",
-        author: "",
-        genre: "",
+        title: "My Hero Academia",
+        author: "Kōhei Horikoshi",
+        genre: "Manga",
         description:
-        url: https:
+        url: https: "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png"
 
 
 },
 
 
 
-
-
-{
-
-     id: 12,
-        title: "",
-        author: "",
-        genre: "",
-        description:
-        url: https:
-
-
-},
 
 
 
