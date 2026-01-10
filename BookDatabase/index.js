@@ -6,34 +6,38 @@ app.use(bodyParser.json());
 
 importbookRoutes from './routes/books.js';
 
-app.get("/books", (req, res) => { ///api endpoint
+app.get("/books", (req, res) => { ///api endpoint //Using Node and Express, create a GET router with a response that converts all using Json()
     res.json(BOOKS);
 
-    });
+});
 app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`)); //running our server
 
 
 //Hardcoded data
 const books = [
-     {
-    id:1,
-    title: "MARS",
-    author: "Fuyumi Soryo",
-    genre: "Manga",
-  },
+    {
+        id: 1,
+        title: "MARS",
+        author: "Fuyumi Soryo",
+        genre: "Manga",
+        description: 
+        url: https: "https://bloomreviewsblog.com/wp-content/uploads/2016/09/rei-kira-bike.jpg"
+    },
+    {
+        id: 2,
+        title: "Demon Slayer: Kimetsu no Yaiba",
+        author: "Koyoharu Gotouge",
+        genre: "Manga",
+    }
   {
-id: 2,
-title: "Demon Slayer: Kimetsu no Yaiba",
-    author: "Koyoharu Gotouge",
-    genre: "Manga",
-  }
-  {
-id: 3, 
-title: "One Piece",
-author: "Eiichiro Oda",
-genre: "Manga",
+        id: 3,
+        title: "One Piece",
+        author: "Eiichiro Oda",
+        genre: "Manga",
+        description: 
+        url: "https://www.toei-animation.com/wp-content/uploads/2019/02/one_piece_product.jpg"
 
-  }
+    }
 
 ];
 
@@ -41,7 +45,7 @@ genre: "Manga",
 
 
 //Change the information inside the file books.js to have your own unique data (we suggest books, but if you want to use any other data, it's ok)
-//Using Node and Express, create a GET router with a response that converts all using Json()
+//*****Using Node and Express, create a GET router with a response that converts all using Json()
 //Using that endpoint build a list of all your books in the backend(server side).
 //Using Node and Express, create a route for each one of the verbs in CRUD operations in the backend. You don't need to have a frontend. You can test your API using Postman.
 //Have at least 50 commits
