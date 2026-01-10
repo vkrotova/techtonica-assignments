@@ -4,7 +4,7 @@ const app = express();
 const PORT = 5001;
 app.use(bodyParser.json());
 
-importbookRoutes from './routes/books.js';
+import bookRoutes from './routes/books.js';
 
 app.get("/books", (req, res) => { ///api endpoint //Using Node and Express, create a GET router with a response that converts all using Json()
     res.json(BOOKS);
@@ -51,15 +51,119 @@ const books = [
 
     },
 
-    {id: 5, 
+    {
+        id: 5, 
         title: "Sailor Moon"
         author: "Naoko Takeuchi",
         genre: "Manga",
         description:
-        url: https: "https://i0.wp.com/www.syfy.com/sites/syfy/files/styles/1200x1200/public/wire/legacy/sailormoon.jpg"
+        url: "https://i0.wp.com/www.syfy.com/sites/syfy/files/styles/1200x1200/public/wire/legacy/sailormoon.jpg"
 
 
     },
+
+
+{
+
+     id: 6,
+        title: "Marmalade Boy",
+        author: "Fuyumi Soryo",
+        genre: "Manga",
+        description:
+        url: https:
+
+
+},
+
+
+{
+
+     id: 7,
+        title: "",
+        author: "",
+        genre: "",
+        description:
+        url: https:
+
+
+},
+
+{
+
+     id: 8,
+        title: "",
+        author: "",
+        genre: "",
+        description:
+        url: https:
+
+
+},
+
+{
+
+     id: 9,
+        title: "",
+        author: "",
+        genre: "",
+        description:
+        url: https:
+
+
+},
+
+{
+
+     id: 10,
+        title: "",
+        author: "",
+        genre: "",
+        description:
+        url: https:
+
+
+},
+
+{
+
+     id: 1,
+        title: "",
+        author: "",
+        genre: "",
+        description:
+        url: https:
+
+
+},
+
+{
+
+     id: 12,
+        title: "",
+        author: "",
+        genre: "",
+        description:
+        url: https:
+
+
+},
+
+
+
+
+
+{
+
+     id: 12,
+        title: "",
+        author: "",
+        genre: "",
+        description:
+        url: https:
+
+
+},
+
 
 
 
@@ -70,7 +174,7 @@ const books = [
 
 //Change the information inside the file books.js to have your own unique data (we suggest books, but if you want to use any other data, it's ok)
 //*****Using Node and Express, create a GET router with a response that converts all using Json()
-//Using that endpoint build a list of all your books in the backend(server side).
+//*****Using that endpoint build a list of all your books in the backend(server side).
 //Using Node and Express, create a route for each one of the verbs in CRUD operations in the backend. You don't need to have a frontend. You can test your API using Postman.
 //Have at least 50 commits
 //Optional Bonus: Using that endpoint build a list of all your books in the frontend (client side). Note: you will need to make a GET request to bring all your information to the frontend too

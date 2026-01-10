@@ -1,6 +1,6 @@
 import express from 'express';
 
-connst router = express.REouter();
+const router = express.Router();
 
 router.get('/books' , (req, res) => {
     res.send('Books');
