@@ -20,24 +20,38 @@ const books = [
         title: "MARS",
         author: "Fuyumi Soryo",
         genre: "Manga",
-        description: 
-        url: https: "https://bloomreviewsblog.com/wp-content/uploads/2016/09/rei-kira-bike.jpg"
+        description:
+            url: https: "https://bloomreviewsblog.com/wp-content/uploads/2016/09/rei-kira-bike.jpg"
     },
     {
         id: 2,
         title: "Demon Slayer: Kimetsu no Yaiba",
         author: "Koyoharu Gotouge",
         genre: "Manga",
-    }
-  {
+    },
+    {
         id: 3,
         title: "One Piece",
         author: "Eiichiro Oda",
         genre: "Manga",
-        description: 
+        description:
         url: "https://www.toei-animation.com/wp-content/uploads/2019/02/one_piece_product.jpg"
 
+    },
+
+    {
+        id: 4,
+        titile: "Boys Over Flowers"
+        author: "Yoko Kamio"
+        genre: "manga"
+        description:
+        url: https:"//m.media-amazon.com/images/I/91UOsHhcByL._SL1500_.jpg"
+
+
+
     }
+
+
 
 ];
 
