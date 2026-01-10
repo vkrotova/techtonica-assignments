@@ -16,138 +16,105 @@ app.listen(PORT, () => console.log(`Server running on port: http://localhost:${P
 
 //Hardcoded data
 const books = [
-    {
-        id: 1,
-        title: "MARS",
-        author: "Fuyumi Soryo",
-        genre: "Manga",
-        description:
-        url: https: "https://bloomreviewsblog.com/wp-content/uploads/2016/09/rei-kira-bike.jpg"
-    },
-    {
-        id: 2,
-        title: "Demon Slayer: Kimetsu no Yaiba",
-        author: "Koyoharu Gotouge",
-        genre: "Manga",
-    },
-    {
-        id: 3,
-        title: "One Piece",
-        author: "Eiichiro Oda",
-        genre: "Manga",
-        description:
-        url: "https://www.toei-animation.com/wp-content/uploads/2019/02/one_piece_product.jpg"
-
-    },
-
-    {
-        id: 4,
-        titile: "Boys Over Flowers"
-        author: "Yoko Kamio"
-        genre: "manga"
-        description:
-        url: https:"//m.media-amazon.com/images/I/91UOsHhcByL._SL1500_.jpg"
-
-
-
-    },
-
-    {
-        id: 5, 
-        title: "Sailor Moon"
-        author: "Naoko Takeuchi",
-        genre: "Manga",
-        description:
-        url: "https://i0.wp.com/www.syfy.com/sites/syfy/files/styles/1200x1200/public/wire/legacy/sailormoon.jpg"
-
-
-    },
-
+   
+{
+  id: 1,
+  title: "MARS",
+  author: "Fuyumi Soryo",
+  genre: "Manga",
+  description: "A dramatic romance manga about love and trauma",
+  url: "https://bloomreviewsblog.com/wp-content/uploads/2016/09/rei-kira-bike.jpg"
+}
 
 {
-
-     id: 6,
-        title: "Marmalade Boy",
-        author: "Wataru Yoshizumi",
-        genre: "Manga",
-        description:
-        url: https: "https://m.media-amazon.com/images/M/MV5BNWIxZjQxMDgtZjM4YS00ZTEyLTliNGItMDYyMzg1NWIwNzY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-
-
-},
-
-
-{
-
-     id: 7,
-        title: "His and Her Circumstances",
-        author: "Masami Tsuda",
-        genre: "Manga",
-        description:
-        url: https: "https://m.media-amazon.com/images/I/519N1D3AWXL.jpg"
-
-
-},
-
-{
-
-     id: 8,
-        title: "From Me to You"
-        author: "Karuho Shiina",
-        genre: "Manga",
-        description:
-        url: https: "https://m.media-amazon.com/images/I/81Jp-JCMgbL._SL1500_.jpg"
-
-
-},
-
-{
-
-     id: 9,
-        title: "Good Morning Call",
-        author: "Yue Takasuka",
-        genre: "",
-        description:
-        url: https: "https://d3tvwjfge35btc.cloudfront.net/Assets/10/049/L_p1001804910.jpg"
-
-
-},
-
-{
-
-     id: 10,
-        title: "",
-        author: "",
-        genre: "",
-        description:
-        url: https:
-
-
-},
-
-{
-
-     id: 11,
-        title: "Astro Boy",
-        author: "Tetsuwan Atomu",
-        genre: "Manga",
-        description:
-        url: https: "https://upload.wikimedia.org/wikipedia/en/a/a6/Astro_Boy-08.jpg"
-
-
-},
-
-{
-
-     id: 12,
-        title: "My Hero Academia",
-        author: "Kōhei Horikoshi",
-        genre: "Manga",
-        description:
-        url: https: "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png"
-
-
-},
+    id: 2,
+    title: "Demon Slayer: Kimetsu no Yaiba",
+    author: "Koyoharu Gotouge",
+    genre: "Manga",
+    description: "",
+    url: ""
+  },
+  {
+    id: 3,
+    title: "One Piece",
+    author: "Eiichiro Oda",
+    genre: "Manga",
+    description: "",
+    url: "https://www.toei-animation.com/wp-content/uploads/2019/02/one_piece_product.jpg"
+  },
+  {
+    id: 4,
+    title: "Boys Over Flowers",
+    author: "Yoko Kamio",
+    genre: "Manga",
+    description: "",
+    url: "https://m.media-amazon.com/images/I/91UOsHhcByL._SL1500_.jpg"
+  },
+  {
+    id: 5,
+    title: "Sailor Moon",
+    author: "Naoko Takeuchi",
+    genre: "Manga",
+    description: "",
+    url: "https://i0.wp.com/www.syfy.com/sites/syfy/files/styles/1200x1200/public/wire/legacy/sailormoon.jpg"
+  },
+  {
+    id: 6,
+    title: "Marmalade Boy",
+    author: "Wataru Yoshizumi",
+    genre: "Manga",
+    description: "",
+    url: "https://m.media-amazon.com/images/M/MV5BNWIxZjQxMDgtZjM4YS00ZTEyLTliNGItMDYyMzg1NWIwNzY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    id: 7,
+    title: "His and Her Circumstances",
+    author: "Masami Tsuda",
+    genre: "Manga",
+    description: "",
+    url: "https://m.media-amazon.com/images/I/519N1D3AWXL.jpg"
+  },
+  {
+    id: 8,
+    title: "From Me to You",
+    author: "Karuho Shiina",
+    genre: "Manga",
+    description: "",
+    url: "https://m.media-amazon.com/images/I/81Jp-JCMgbL._SL1500_.jpg"
+  },
+  {
+    id: 9,
+    title: "Good Morning Call",
+    author: "Yue Takasuka",
+    genre: "Manga",
+    description: "",
+    url: "https://d3tvwjfge35btc.cloudfront.net/Assets/10/049/L_p1001804910.jpg"
+  },
+  {
+    id: 10,
+    title: "",
+    author: "",
+    genre: "",
+    description: "",
+    url: ""
+  },
+  {
+    id: 11,
+    title: "Astro Boy",
+    author: "Osamu Tezuka",
+    genre: "Manga",
+    description: "",
+    url: "https://upload.wikimedia.org/wikipedia/en/a/a6/Astro_Boy-08.jpg"
+  },
+  {
+    id: 12,
+    title: "My Hero Academia",
+    author: "Kōhei Horikoshi",
+    genre: "Manga",
+    description: "",
+    url: "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png"
+  }
+  
 
 
 
