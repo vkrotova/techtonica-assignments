@@ -21,7 +21,7 @@ const books = [
         author: "Fuyumi Soryo",
         genre: "Manga",
         description:
-            url: https: "https://bloomreviewsblog.com/wp-content/uploads/2016/09/rei-kira-bike.jpg"
+        url: https: "https://bloomreviewsblog.com/wp-content/uploads/2016/09/rei-kira-bike.jpg"
     },
     {
         id: 2,
@@ -49,7 +49,17 @@ const books = [
 
 
 
-    }
+    },
+
+    {id: 5, 
+        title: "Sailor Moon"
+        author: "Naoko Takeuchi",
+        genre: "Manga",
+        description:
+        url: https: "https://i0.wp.com/www.syfy.com/sites/syfy/files/styles/1200x1200/public/wire/legacy/sailormoon.jpg"
+
+
+    },
 
 
 
