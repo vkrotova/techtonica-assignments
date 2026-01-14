@@ -109,7 +109,7 @@ const books = [
 
 
 // all routes in here starts with books
-//READ: List of books
+// List of books
 router.get("/", (req, res) => {
     res.send(books);
 });
@@ -134,6 +134,18 @@ router.post("/", (req, res) => {
     books.push(newBook);
 
    res.send(`Books with the name ${title} added to the database!`);
+});
+
+// READ: Find book details
+router.get("/:id", (req, res) => {
+    
+    const id = parseInt(req.params.id);
+    //console.log(id);
+    const foundBook = books.find((book) => book.id === id);
+    //console.log(foundBook);
+    if (!foundBook) return res.status(404).json({ message: "Book not found" });
+
+    res.json(foundBook);
 });
 
 
