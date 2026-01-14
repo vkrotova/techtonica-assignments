@@ -2,11 +2,6 @@ import express from 'express';
 
 const router = express.Router();
 
-router.get("/books", (req, res) => {
-    res.send('Hello');
-});
-
-
 //Hardcoded data
 const books = [
 
@@ -110,15 +105,41 @@ const books = [
     }
 
 
-
-
-
-
-
-
 ];
 
-export default books
+
+// all routes in here starts with books
+//READ: List of books
+router.get("/", (req, res) => {
+    res.send(books);
+});
+
+
+// CREATE: Add a new book
+router.post("/", (req, res) => {
+   //console.log('POST ROUTE REACHED');
+   
+   //Get message from postman 
+    const { title, author, genre, description, url } = req.body;
+
+    //Create a record to add to the list
+    const newBook = {
+        id: books.length ? books[books.length - 1].id + 1 : 1,
+        title,
+        author,
+        genre,
+        description,
+        url
+    };
+    books.push(newBook);
+
+   res.send(`Books with the name ${title} added to the database!`);
+});
+
+
+
+
+export default router;
 
 
 //*****Change the information inside the file books.js to have your own unique data (we suggest books, but if you want to use any other data, it's ok)

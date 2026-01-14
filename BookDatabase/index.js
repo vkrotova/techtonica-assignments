@@ -1,18 +1,18 @@
 import cors from 'cors';
 import express from 'express';
 import bodyParser from 'body-parser';
-//import books from './routes/books.js'
+import booksRoutes from './routes/books.js'
 
 const app = express();
 const PORT = 5001;
 app.use(cors());
 app.use(bodyParser.json());
 
-//app.use('/books, booksRoutes');
+app.use('/books', booksRoutes);
 
 /*Running HomePage */
 app.get('/', (req,res)=>{
-    res.json("Hello this is my Home Page")
+    res.json("Hello this is my Home Page");
 }) 
 
 
