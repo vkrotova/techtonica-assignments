@@ -3,7 +3,7 @@ import express from 'express';
 const router = express.Router();
 
 //Hardcoded data
-const books = [
+let books = [
 
     {
         id: 1,
@@ -146,6 +146,19 @@ router.get("/:id", (req, res) => {
     if (!foundBook) return res.status(404).json({ message: "Book not found" });
 
     res.json(foundBook);
+});
+
+//DELETE: 
+router.delete("/:id", (req, res) => {
+    
+    const id = parseInt(req.params.id);
+    //console.log(id);
+
+    const books = books.filter((book) => book.id !== id);
+    //console.log(foundBook);
+    //if (!foundBook) return res.status(404).json({ message: "Book not found" });
+
+    res.send(`Books with the name ${id} added to the database!`);
 });
 
 
