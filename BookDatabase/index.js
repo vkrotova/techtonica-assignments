@@ -53,6 +53,17 @@ app.put("/books/:id", (req, res) => {
     res.json(book);
 });
 
+
+// DELETE: Delete book by ID
+app.delete("/books/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const index = booksData.findIndex(b => b.id === id);
+    if (index === -1) return res.status(404).json({ message: "Book not found" });
+
+    booksData.splice(index, 1);
+    res.json({ message: "Book deleted successfully" });
+});
+
 app.get("/books", (req, res) => { ///api endpoint //Using Node and Express, create a GET router with a response that converts all using Json()
     res.json(books);
 
