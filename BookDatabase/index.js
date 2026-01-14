@@ -36,6 +36,23 @@ app.post("/books", (req, res) => {
     res.status(201).json(newBook);
 });
 
+
+// UPDATE: Update book by ID
+app.put("/books/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const book = booksData.find(b => b.id === id);
+    if (!book) return res.status(404).json({ message: "Book not found" });
+
+    const { title, author, genre, description, url } = req.body;
+    book.title = title ?? book.title;
+    book.author = author ?? book.author;
+    book.genre = genre ?? book.genre;
+    book.description = description ?? book.description;
+    book.url = url ?? book.url;
+
+    res.json(book);
+});
+
 app.get("/books", (req, res) => { ///api endpoint //Using Node and Express, create a GET router with a response that converts all using Json()
     res.json(books);
 
