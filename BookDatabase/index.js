@@ -1,72 +1,20 @@
 import cors from 'cors';
 import express from 'express';
 import bodyParser from 'body-parser';
-import books from './books.js'
+//import books from './routes/books.js'
+
 const app = express();
 const PORT = 5001;
 app.use(cors());
 app.use(bodyParser.json());
+
 //app.use('/books, booksRoutes');
 
+/*Running HomePage */
 app.get('/', (req,res)=>{
-    res.json("Hello this is my server")
+    res.json("Hello this is my Home Page")
 }) 
-//import bookRoutes from './routes/books.js';
-
-// READ: Get book by ID
-app.get("/books/:id", (req, res) => {
-    const id = parseInt(req.params.id);
-    const book = booksData.find(b => b.id === id);
-    if (!book) return res.status(404).json({ message: "Book not found" });
-    res.json(book);
-});
-
-// CREATE: Add a new book
-app.post("/books", (req, res) => {
-    const { title, author, genre, description, url } = req.body;
-    const newBook = {
-        id: booksData.length ? booksData[booksData.length - 1].id + 1 : 1,
-        title,
-        author,
-        genre,
-        description,
-        url
-    };
-    booksData.push(newBook);
-    res.status(201).json(newBook);
-});
 
 
-// UPDATE: Update book by ID
-app.put("/books/:id", (req, res) => {
-    const id = parseInt(req.params.id);
-    const book = booksData.find(b => b.id === id);
-    if (!book) return res.status(404).json({ message: "Book not found" });
-
-    const { title, author, genre, description, url } = req.body;
-    book.title = title ?? book.title;
-    book.author = author ?? book.author;
-    book.genre = genre ?? book.genre;
-    book.description = description ?? book.description;
-    book.url = url ?? book.url;
-
-    res.json(book);
-});
-
-
-// DELETE: Delete book by ID
-app.delete("/books/:id", (req, res) => {
-    const id = parseInt(req.params.id);
-    const index = booksData.findIndex(b => b.id === id);
-    if (index === -1) return res.status(404).json({ message: "Book not found" });
-
-    booksData.splice(index, 1);
-    res.json({ message: "Book deleted successfully" });
-});
-
-app.get("/books", (req, res) => { ///api endpoint //Using Node and Express, create a GET router with a response that converts all using Json()
-    res.json(books);
-
-});
 app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`)); //running our server
 
