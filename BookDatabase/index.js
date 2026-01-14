@@ -21,6 +21,21 @@ app.get("/books/:id", (req, res) => {
     res.json(book);
 });
 
+// CREATE: Add a new book
+app.post("/books", (req, res) => {
+    const { title, author, genre, description, url } = req.body;
+    const newBook = {
+        id: booksData.length ? booksData[booksData.length - 1].id + 1 : 1,
+        title,
+        author,
+        genre,
+        description,
+        url
+    };
+    booksData.push(newBook);
+    res.status(201).json(newBook);
+});
+
 app.get("/books", (req, res) => { ///api endpoint //Using Node and Express, create a GET router with a response that converts all using Json()
     res.json(books);
 
