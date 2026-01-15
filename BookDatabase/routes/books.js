@@ -133,7 +133,7 @@ router.post("/", (req, res) => {
     };
     books.push(newBook);
 
-   res.send(`Books with the name ${title} added to the database!`);
+   res.send(`Book with the name ${title} added to the database!`);
 });
 
 // READ: Find book details
@@ -154,15 +154,32 @@ router.delete("/:id", (req, res) => {
     const id = parseInt(req.params.id);
     //console.log(id);
 
-    const books = books.filter((book) => book.id !== id);
+    books = books.filter((book) => book.id !== id);
     //console.log(foundBook);
     //if (!foundBook) return res.status(404).json({ message: "Book not found" });
 
-    res.send(`Books with the name ${id} added to the database!`);
+    res.send(`Book with the id: ${id} deleted from the database!`);
 });
 
+// UPDATE: Uodate a book
+router.patch("/:id", (req, res) => {
+   
 
+   //Get message from postman
+   const id = parseInt(req.params.id);
+   const { title, author, genre, description, url } = req.body;
 
+   // Find book to update
+   const foundBook = books.find((book) => book.id === id);
+
+   if(title) foundBook.title = title;
+   if(author) foundBook.author = author;
+   if(genre) foundBook.genre = genre;
+   if(description) foundBook.description = description;
+   if(url) foundBook.url = url;
+
+   res.send(`Book with the id: ${id} has been updated!`);
+});
 
 export default router;
 
