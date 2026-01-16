@@ -1,3 +1,5 @@
+import * as db from "../db.js"
+
 //Hardcoded data
 let books = [
 
@@ -103,18 +105,19 @@ let books = [
 
 ];
 
-export const getUsers = (req, res) => {
-    res.send(books);
+export async function getUsers (req, res) {
+    const books_db = await db.getBooks();
+    res.json(books_db);
 }
 
-export const createBook = (req, res) => {
+export async function createBook (req, res) {
    //console.log('POST ROUTE REACHED');
    
    //Get message from postman 
     const { title, author, genre, description, url } = req.body;
 
     //Create a record to add to the list
-    const newBook = {
+    /*const newBook = {
         id: books.length ? books[books.length - 1].id + 1 : 1,
         title,
         author,
@@ -122,7 +125,8 @@ export const createBook = (req, res) => {
         description,
         url
     };
-    books.push(newBook);
+    */
+   // books.push(newBook);
 
    res.send(`Book with the name ${title} added to the database!`);
 }
