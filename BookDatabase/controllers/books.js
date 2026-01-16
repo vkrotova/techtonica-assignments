@@ -115,6 +115,7 @@ export async function createBook (req, res) {
    
    //Get message from postman 
     const { title, author, genre, description, url } = req.body;
+    console.log(title)
 
     //Create a record to add to the list
     /*const newBook = {
@@ -127,34 +128,38 @@ export async function createBook (req, res) {
     };
     */
    // books.push(newBook);
+   const books_db = await db.createBook(title, author, genre, description, url); 
 
    res.send(`Book with the name ${title} added to the database!`);
 }
 
-export const readBook = (req, res) => {
+export async function readBook (req, res) {
     
     const id = parseInt(req.params.id);
     //console.log(id);
-    const foundBook = books.find((book) => book.id === id);
+    //const foundBook = books.find((book) => book.id === id);
     //console.log(foundBook);
+    const foundBook = await db.getBookById(id);
+
     if (!foundBook) return res.status(404).json({ message: "Book not found" });
 
     res.json(foundBook);
 }
 
-export const deleteBook = (req, res) => {
+export async function deleteBook(req, res) {
     
     const id = parseInt(req.params.id);
     //console.log(id);
 
-    books = books.filter((book) => book.id !== id);
+    //books = books.filter((book) => book.id !== id);
     //console.log(foundBook);
     //if (!foundBook) return res.status(404).json({ message: "Book not found" });
+    const books = await db.deleteBook(id);
 
     res.send(`Book with the id: ${id} deleted from the database!`);
 }
 
-export const updateBook = (req, res) => {
+export async function updateBook (req, res) {
    
 
    //Get message from postman
@@ -162,13 +167,20 @@ export const updateBook = (req, res) => {
    const { title, author, genre, description, url } = req.body;
 
    // Find book to update
-   const foundBook = books.find((book) => book.id === id);
+   //const foundBook = books.find((book) => book.id === id);
+    const foundBook = await db.getBookById(id);
 
+    if (!foundBook) return res.status(404).json({ message: "Book not found" });
+
+   //Get existing values
    if(title) foundBook.title = title;
    if(author) foundBook.author = author;
    if(genre) foundBook.genre = genre;
    if(description) foundBook.description = description;
    if(url) foundBook.url = url;
+
+   
+   const books = await db.updateBook(foundBook.id, foundBook.title, foundBook.author, foundBook.genre, foundBook.description, foundBook.url);
 
    res.send(`Book with the id: ${id} has been updated!`);
 }
